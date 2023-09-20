@@ -1,0 +1,210 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.container{
+    width: 600px;
+    margin: 50px auto 0px;
+    padding: 15px;
+}
+.container .header-div{
+    padding: 15px;
+    background-color: #1e4558;
+    position: relative;
+}
+.container .header-div input{
+    width: calc(100%  - 15px);
+    padding: 10px 15px;
+    border: none;
+    outline: none;
+    font-size: 15px;
+    font-weight: bold;
+    background-color: #daeaf9;
+    color: #071e22;
+}
+.container .header-div .plus{
+    position: absolute;
+    width: 37px;
+    height: 37px;
+    border-radius: 50%;
+    background-color: #74c9cc;
+    line-height: 37px;
+    right: 15px;
+    font-size: 17px;
+    font-weight: bold;
+    text-align: center;
+    color: #0f2829;
+    cursor: pointer; 
+    transition: transform .3s;
+}
+.container .header-div .plus:hover{
+    transform: rotate(90deg);
+}
+.container .tasks-contents{
+    background-color: #1b2a41;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    color: #0047ab;
+}
+.container .tasks-contents > span{
+    background-color: #eee;
+    padding: 15px; 
+    font-size: 15px;
+    font-weight: bold;
+}
+.container .tasks-contents > span:not(:last-child){
+   margin-bottom: 10px;
+}
+.container .tasks-contents .added-task.finished{
+   text-decoration: line-through;
+    color: #e71d36;
+}
+.container .tasks-contents .added-task{
+    font-size: 25px;
+    font-weight: bold;
+}
+.container .tasks-contents .added-task span{
+    float: right;
+    background-color: #e71d36;
+    color: white;
+    font-size: 15px;
+    padding: 5px 15px;
+    cursor: pointer;
+}
+.container .tasks-contents .no-message{
+    color: #939597;
+}
+.container .status{
+    overflow: hidden;
+    padding: 15px;
+    background-color: #044855;
+    color: #c0c0c0;
+}
+.container .status .count{
+    float: left;
+    padding: 7px;
+}
+.container .status .completed{
+    float: right;
+    padding: 7px;
+}
+.container .status .count span,
+.container .status .completed span{
+    background-color: #8eacd9;
+    padding: 7px 10px;
+    color: #133dd7;
+    font-size: 15px;
+    font-weight: bold;
+}
+.operate{
+    margin-top: 15px;
+    background-color: #1e4558;
+    padding: 15px;
+    overflow: hidden;
+    font-size: 15px;
+}
+.clear{
+    background-color: #e71d36;
+    color: white;
+    padding: 7px 17px;
+    cursor: pointer;
+    border-radius: 5px;
+    float: left;
+}
+.cCompleted{
+    background-color: #e71d36;
+    color: white;
+    padding: 7px 17px;
+    cursor: pointer;
+    border-radius: 5px;
+    float: right;
+}
+.cont{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: none;
+    background-color: rgba(0 , 0, 0 , .7);
+}
+.empty{
+    width: 300px;
+    height: 200px;
+    background-color: white;
+    border-radius: 7px;
+    position: relative;
+    left: 36%;
+    top: 15%;
+}
+.empty .x{
+    width: 70px; 
+    height: 70px;
+    border-radius: 50%; 
+    background-color: transparent;
+    color: #ff424e;
+    border: 3px solid #ff424e;
+    font-size: 30px;
+    text-align: center;
+    line-height: 40px;
+    padding: 10px;
+    position: absolute;
+    left: 50%;
+    top: 20%;
+    transform: translate(-50% , -50%);
+}
+.empty .oops{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50% , -50%);
+    font-size: 25px;
+}
+.empty .text{
+    position: absolute;
+    left: 50%;
+    bottom: -175%;
+    transform: translate(-50% , -50%);
+    font-size: 25px;
+    width: 210px;
+}
+.cont .ok{
+    background-color: #ff424e;
+    position: absolute;
+    left: 50%;
+    bottom: -330%;
+    transform: translate(-50% , -50%);
+    padding: 3px 15px;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.cont .ok:hover{
+    background-color: blue;
+}
+@media(min-width: 320px) and (max-width: 480px){
+    .container{
+        width: 380px;
+    }
+    .empty{
+      position: relative;
+      left: 50%;
+      top: 30%;
+      transform: translate(-50%, -50%);
+    }
+    .cont{
+        width: 100%;
+        height: 100%;
+    }
+    .com,
+    .del,
+    .dup{
+        width : 380px
+    }
+}
