@@ -11,5 +11,15 @@ The idea of this application you can store your information in it , like your im
 ### 6- (Hint => notice if you entered identical tasks you will find message tell you duplicating tasks you should enter a different task )
 ### 7- This application is responsive in [mobiles , pc , labtop].
 <hr></br>
-when enter into application you will find ----->
-<img src="">
+# when enter into application you will find ----->
+<img src="https://github.com/kareemtarekK/ToDo-List/blob/main/images/2.jpg" width="300" height="300">
+# after that add task like that...
+<img src="https://github.com/kareemtarekK/ToDo-List/blob/main/images/4.jpg" width="300" height="300">
+# id you want to delete spesific task click on delete...
+<img src="https://github.com/kareemtarekK/ToDo-List/blob/main/images/.jpg" width="300" height="300">
+# if youcomplete task click on this task (will be has line through it and in red color)
+<img src="https://github.com/kareemtarekK/ToDo-List/blob/main/images/5.jpg" width="300" height="300">
+# if you want to drop selected tasks => you will get this message
+<img src="https://github.com/kareemtarekK/ToDo-List/blob/main/images/1.jpg" width="300" height="300">
+# if you want to clear all tasks => you will get this message
+<img src="https://github.com/kareemtarekK/ToDo-List/blob/main/images/6.jpg" width="300" height="300">
